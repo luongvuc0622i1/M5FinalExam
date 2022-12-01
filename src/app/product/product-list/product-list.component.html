@@ -38,7 +38,7 @@
           <td style="vertical-align: middle; text-align: right">{{product.price}}</td>
           <th></th>
           <td style="vertical-align: middle; text-align: center"><a [routerLink]="['/products/edit',product.id]" (click)="findProduct(product)"><button type="button" class="btn btn-success" style="width: 100px"><i class="fa fa-magic"></i>&nbsp; Sửa</button></a></td>
-          <td style="vertical-align: middle; text-align: center"><a [routerLink]="['/products/delete',product.id]" (click)="findProduct(product)"><button type="button" class="btn btn-danger" style="width: 100px"><i class="fa fa-rss"></i>&nbsp; Xoá</button></a></td>
+          <td style="vertical-align: middle; text-align: center"><a (click)="findProduct(product)"><button type="button" (click)="delete(product.id)" class="btn btn-danger" style="width: 100px"><i class="fa fa-rss"></i>&nbsp; Xoá</button></a></td>
         </tr>
         </tbody>
       </table>

@@ -31,4 +31,15 @@ export class ProductListComponent implements OnInit, OnChanges {
     let id = product.id;
     return this.productService.findById(id);
   }
+
+  delete(id: any) {
+    if (confirm('Bạn có chắc muốn xoá sản phẩm này?')) {
+      this.productService.delete(id).subscribe(() => {
+        alert("OK!");
+        this.getAll();
+      }, e => {
+        console.log(e);
+      })
+    }
+  }
 }
