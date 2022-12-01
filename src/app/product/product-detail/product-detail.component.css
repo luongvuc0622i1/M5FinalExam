@@ -1,0 +1,16 @@
+body {
+  color: #566787;
+  background: #f7f5f2;
+}
+.container {
+  margin-top: 50px;
+  margin-left: 285px;
+}
+.btn-primary {
+  background: #40b2cd;
+  border-color: white;
+}
+.btn-primary hover {
+  background: #068cac;
+  border-color: white;
+}
